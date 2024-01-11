@@ -15,11 +15,3 @@ public class Post
     public Guid CategoryId { get; set; }
 
 }
-
-public class Category
-{
-    public Guid Id { get; set; }
-    public string? Name { get; set; }
-    public ICollection<Post>? Blogs { get; set; }
-
-}
