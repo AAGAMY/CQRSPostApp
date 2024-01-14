@@ -34,9 +34,9 @@ public class PostDbContext : DbContext
         modelBuilder.Entity<Posts.Domain.Post>().HasData(new Posts.Domain.Post
         {
             Id = postGuid,
-            Title = "Introduction to CQRS and Mediator Patterns",
-            Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            ImageUrl = "https://api.khalidessaadani.com/uploads/articles_bg. jpg",
+            Title = "Create Application Using CQRS and Mediator Patterns",
+            Content = "Example using CQRS and Mediator Patterns with Clean Code",
+            ImageUrl = "Photo.jpg",
             CategoryId = categoryGuid
         });
 
