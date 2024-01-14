@@ -1,4 +1,4 @@
-﻿namespace Post.Domain;
+﻿namespace Posts.Domain;
 
 public class Category
 {

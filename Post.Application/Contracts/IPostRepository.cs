@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 
 namespace Post.Application.Contracts;
-public interface IPostRepository : IAsyncRepository<Post.Domain.Post>
+public interface IPostRepository : IAsyncRepository<Posts.Domain.Post>
 {
-    Task<IReadOnlyList<Post.Domain.Post>> GetAllPostsAsync(bool includeCategory);
-    Task<Post.Domain.Post> GetPostByIdAsync(Guid id, bool includeCategory);
+    Task<IReadOnlyList<Posts.Domain.Post>> GetAllPostsAsync(bool includeCategory);
+    Task<Posts.Domain.Post> GetPostByIdAsync(Guid id, bool includeCategory);
 }

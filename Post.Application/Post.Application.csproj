@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Post\Commands\DeletePost\" />
-    <Folder Include="Features\Post\Commands\UpdatePost\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Post.Domain\Post.Domain.csproj" />
+    <ProjectReference Include="..\Post.Domain\Posts.Domain.csproj" />
   </ItemGroup>
 
 </Project>
