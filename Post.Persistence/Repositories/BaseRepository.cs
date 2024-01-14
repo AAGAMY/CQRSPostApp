@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Post.Persistence.Repositories;
 public class BaseRepository<T> : IAsyncRepository<T> where T : class
 {
-    private readonly PostDbContext _context;
+    public readonly PostDbContext _context;
 
     public BaseRepository(PostDbContext context)
     {
